@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate Valentine's Day with love and joy!">
+    <meta name="google-site-verification" content="4eql3A-Wy0DNu-GxoCjr69VHEgHQq_yku2WgeF91c9E" />
+    <meta name="author" content="gotofinds.shop">
+    <meta name="description" content="Your website description">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+<meta name="author" content="Your Name">
+<meta property="og:title" content="Your Website Title">
+<meta property="og:description" content="A brief description of your website">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yourdomain.com/image.jpg">
+
+    <title>LUXURY BRIGHT</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24' fill='red'>&#10084;</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4B164C;
+            --background: #F5F5F5;
+            --accent-light: #F8E7F6;
+            --accent-dark: #DD88CF;
+        }
+
+        body {
+            background-color: var(--background);
+            width: 100%;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .heart {
+            background: var(--accent-dark) !important;
+        }
+
+        .heart:before,
+        .heart:after {
+            background: var(--accent-dark) !important;
+        }
+
+        [data-theme="dark"] {
+            --background: #1a1a1a;
+            --text-primary: var(--background);
+        }
+
+        nav.bg-white,
+        .bg-white {
+            background-color: var(--background) !important;
+        }
+
+        .text-gray-900,
+        .text-gray-800,
+        .text-gray-700,
+        .text-gray-600 {
+            color: var(--primary) !important;
+        }
+
+        .bg-pink-50 {
+            background-color: var(--accent-light) !important;
+        }
+
+        .bg-pink-100 {
+            background-color: var(--accent-dark) !important;
+        }
+
+        .text-pink-600,
+        .text-pink-700,
+        .text-pink-800 {
+            color: var(--primary) !important;
+        }
+
+        .hover\:bg-gray-50:hover {
+            background-color: var(--accent-light) !important;
+        }
+
+        .ring-pink-500 {
+            --tw-ring-color: var(--primary) !important;
+        }
+
+        .hover\:ring-purple-300:hover {
+            --tw-ring-color: var(--accent-dark) !important;
+        }
+
+        .bg-gradient-to-br {
+            background: var(--background) !important;
+        }
+
+        .from-pink-50 {
+            --tw-gradient-from: var(--accent-light) !important;
+        }
+
+        .to-purple-50 {
+            --tw-gradient-to: var(--accent-dark) !important;
+        }
+
+        .from-pink-600.to-purple-600.bg-gradient-to-r {
+            --tw-gradient-from: var(--primary) !important;
+            --tw-gradient-to: var(--accent-dark) !important;
+        }
+
+        .heart-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .heart {
+            width: 50px;
+            height: 50px;
+            background: #ff4b6e;
+            position: relative;
+            transform: rotate(45deg);
+            animation: heartbeat 2s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: #ff4b6e;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            left: -25px;
+        }
+
+        .heart:after {
+            top: -25px;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: rotate(45deg) scale(0.8); }
+            5% { transform: rotate(45deg) scale(0.9); }
+            10% { transform: rotate(45deg) scale(0.8); }
+            15% { transform: rotate(45deg) scale(1); }
+            50% { transform: rotate(45deg) scale(0.8); }
+            100% { transform: rotate(45deg) scale(0.8); }
+        }
+
+        [data-theme="dark"] {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        [data-theme="dark"] .bg-white {
+            background-color: #2d2d2d;
+        }
+
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900,
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-500 {
+            color: #ffffff !important;
+        }
+        [data-theme="dark"] .cccc {
+            color: #000000 !important;
+        }
+        [data-theme="dark"] .hover\:bg-gray-50:hover {
+            background-color: #3d3d3d;
+        }
+
+        [data-theme="dark"] .border {
+            border-color: #404040;
+        }
+
+        [data-theme="dark"] .bg-white {
+            background-color: #2d2d2d;
+        }
+
+        [data-theme="dark"] .bg-gray-100 {
+            background-color: #333333;
+        }
+
+        [data-theme="dark"] .bg-pink-50 {
+            background-color: #3d2d2d;
+        }
+
+        [data-theme="dark"] .bg-yellow-50 {
+            background-color: #3d3525;
+        }
+
+        @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        }
+        .animate-pulse {
+        animation: pulse 1.5s infinite;
+        }
+        @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scale-102 {
+            transform: scale(1.02);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(100%); }
+            10%, 90% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-slide {
+            animation: slide 5s ease-in-out;
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            10%, 90% { opacity: 1; }
+        }
+        .animate-fade {
+            animation: fade 5s ease-in-out;
+        }
+
+        @keyframes bounce-horizontal {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        .animate-bounce-horizontal {
+            animation: bounce-horizontal 2s infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .animate-wave {
+            animation: wave 2s infinite;
+        }
+
+        @keyframes scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-scale {
+            animation: scale 2s infinite;
+        }
+
+        .font-dancing {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem; 
+        }
+    </style>
+</head>
+<body >
+
+    <div id="loader" class="heart-loader">
+        <div class="heart"></div>
+    </div>
+
+    <button id="themeToggle" class="fixed top-4 right-4 p-3 z-50 transition-all duration-500 hover:rotate-180">
+        <div id="themeIcon"></div>
+        <span class="sr-only">Toggle theme</span>
+    </button>
+    <script>
+        let themetoggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        function updateThemeIcon() {
+            if (isDarkMode) {
+                
+                    themeIcon.innerHTML = `
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>`;
+            } else {
+                themeIcon.innerHTML = `
+                    <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>`;
+            }
+        }
+
+        updateThemeIcon();
+
+        themetoggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            updateThemeIcon();
+        });
+    </script>
+
+
+    <div id="countdownContainer" class="fixed bottom-2 right-2 z-50">
+
+        <div id="countdownExpanded" class="bg-pink-100 dark:bg-pink-900 p-2 rounded-lg shadow-lg">
+            <div class="flex justify-between items-center">
+                <h3 class="text-sm font-semibold">Find a Trending Lamps </h3>
+                <button onclick="closeCountdown()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="countdown" class="text-sm text-pink-600 dark:text-pink-300 mt-2"></div>
+        </div>
+        
+        <button id="countdownCollapsed" onclick="showCountdown()" class="hidden bg-pink-100 dark:bg-pink-900 p-2 rounded-full shadow-lg">
+            <svg class="w-5 h-5 text-pink-600 dark:text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </button>
+    </div>
+    <script>
+        setTimeout(() => {
+            closeCountdown();
+        }, 15000);
+
+        function closeCountdown() {
+            document.getElementById('countdownExpanded').classList.add('hidden');
+            document.getElementById('countdownCollapsed').classList.remove('hidden');
+        }
+
+        function showCountdown() {
+            document.getElementById('countdownExpanded').classList.remove('hidden');
+            documentA.getElementById('countdownCollapsed').classList.add('hidden');
+        }
+    </script>
+
+    <div id="quizModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-md w-full">
+            <h2 class="text-lg  mb-4">Find the Perfect Gift</h2>
+            <div id="quizContent"></div>
+        </div>
+    </div>
+
+    <nav class="relative w-full bg-white">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-b from-opacity-40 to-opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-24 items-center justify-center">
+                <div class="flex-shrink-0">
+                    <img class="h-12 w-12 sm:h-16 sm:w-16 rounded-3xl" src="https://images.meesho.com/images/products/438410675/hjxii_512.webp" alt="Logo">
+                </div>
+                <div class="flex flex-col items-center">
+                    <h1 class="font-serif text-xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
+                        LUXURY BRIGHT
+                    </h1>
+                    <span class="text-xs sm:text-sm font-medium text-gray-500">Find your Best Brightness</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="w-full bg-white">
+        <div id="banner-container" class="w-full overflow-hidden">
+            <div class="animate-slide-in w-full border-b overflow-hidden">
+                <div class="flex items-center justify-center space-x-2 py-2 text-sm">
+                    <span id="banner-content" class="flex items-center gap-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 sm:px-2 lg:px-2 my-2 ">
+        <div class="flex gap-4">
+            <div class="relative w-35">
+                <button id="categoryDropdown" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white flex items-center justify-between"
+                        onclick="toggleCategoryDropdown()">
+                    <span id="selectedCategory">All Categories</span>
+                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="categoryList" 
+                     class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg hidden">
+                </div>
+            </div>
+
+            <div class="relative flex-1">
+                <input type="text" 
+                       id="searchInput" 
+                       placeholder="Search products by name or code..." 
+                       class=" cccc w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"
+                       oninput="handleSearchInput()">
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+
+                <div id="searchSuggestions" 
+                     class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg hidden max-h-60 overflow-y-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="app"></div>
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.setAttribute('data-theme', 
+                document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+            );
+        });
+
+        function updateCountdown() {
+            const targetDate = new Date(2025, 11, 31); // December 31st, 2025
+            const now = new Date();
+            const diff = targetDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const totalHours = Math.floor(diff / (1000 * 60 * 60));
+            
+            document.getElementById('countdown').textContent = 
+                `${days} days (${totalHours} hours) remaining until end of 2025!`;
+        }
+        setInterval(updateCountdown, 1000);
+
+        const quizQuestions = [
+            {
+                question: "What's their favorite color?",
+                options: ["Red", "Pink", "Blue", "Purple"]
+            },
+            {
+                question: "What's their style?",
+                options: ["Classic", "Modern", "Romantic", "Practical"]
+            },
+        ];
+
+        let currentQuestion = 0;
+        let quizAnswers = [];
+
+        function startQuiz() {
+            document.getElementById('quizModal').classList.remove('hidden');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const question = quizQuestions[currentQuestion];
+            document.getElementById('quizContent').innerHTML = `
+                <p class="mb-4">${question.question}</p>
+                <div class="space-y-2">
+                    ${question.options.map(option => `
+                        <button onclick="answerQuestion('${option}')" 
+                                class="w-full p-2 text-left hover:bg-pink-100 rounded">
+                            ${option}
+                        </button>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function answerQuestion(answer) {
+            quizAnswers.push(answer);
+            if (currentQuestion < quizQuestions.length - 1) {
+                currentQuestion++;
+                showQuestion();
+            } else {
+                showRecommendations();
+            }
+        }
+
+        function showRecommendations() {
+            const recommendations = getRecommendations(quizAnswers);
+            document.getElementById('quizContent').innerHTML = `
+                <h3 class="text-lg font-bold mb-4">Your Perfect Gift Recommendations</h3>
+                <div class="space-y-4">
+                    ${recommendations.map(item => `
+                        <div class="border p-4 rounded">
+                            <h4 class="font-semibold">${item.name}</h4>
+                            <p class="text-sm text-gray-600">${item.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                <button onclick="closeQuiz()" 
+                        class="mt-4 w-full bg-pink-500 text-white p-2 rounded">
+                    Close
+                </button>
+            `;
+        }
+
+        const productsData = [
+            {
+                id: 1,
+                name: "3D Printed Rechargeable Moon Lamp with Touch Control Adjust Brightness Light with Wooden Standfor Home Decoration rakshabandhan Gift for Sister (15 cm Multi Color - 16 Colors with Remote) LED",
+                category: "Moon",
+                variants: [
+                    {
+                        id: 1,
+                        name: "7 COLOURS,TOUCH CONTROL",
+                        code: "MOONX",
+                        images: [
+                            { url: "https://m.media-amazon.com/images/I/61BfnfoG8BL._SL1280_.jpg", alt: "" },
+                            { url: "https://m.media-amazon.com/images/I/61wAqJ14-KS._SL1500_.jpg", alt: "" },
+                            { url: "https://m.media-amazon.com/images/I/718npDp2tIL._SL1300_.jpg", alt: "" }
+                        ],
+                        affiliateLinks: [ 
+                        {
+                            name: "Meesho",
+                            logo: "https://seeklogo.com/images/M/meesho-logo-69F6628508-seeklogo.com.png?v=638354923440000000",
+                            url: "https://msho.in/IIS9xx",
+                            price: "₹365",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.0,
+                                totalReviews: 220
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "7-12 days",
+                                isFree: true
+                            }
+                        },
+                        {
+                            name: "Flipkart",
+                            logo: "https://seeklogo.com/images/F/flipkart-logo-F2525E4DDE-seeklogo.com.png",
+                            url: "https://fktr.in/Njh9aCG",
+                            price: "₹429",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.1,
+                                totalReviews: 2226
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "3-5 days",
+                                isFree: true
+                            }
+                        },    
+                        {
+                            name: "Amazon.in",
+                            logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+                            url: "https://amzn.to/3PXDkQx",
+                            price: "₹474",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.0,
+                                totalReviews: 904
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "7-12 days",
+                                isFree: true
+                            }
+                        },
+                        {
+                            name: "Amazon.in",
+                            logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+                            url: "https://amzn.to/3EmTXT9",
+                            price: "₹649",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.2,
+                                totalReviews: 3457
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "3-8 days",
+                                isFree: true
+                            }
+                        },
+                        {
+                            name: "Amazon.in",
+                            logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+                            url: "https://amzn.to/40AHPFs",
+                            price: "₹749",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.5,
+                                totalReviews: 504
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "3-8 days",
+                                isFree: true
+                            }
+                        }
+                        ]
+                    },
+                    {
+                        id: 2,
+                        name: "16 COLOURS,TOUCH AND REMOTE",
+                        code: "MOONX",
+                        images: [
+                            { url: "https://m.media-amazon.com/images/I/61OW8zKtDqL._SL1500_.jpg", alt: "" },
+                            { url: "https://m.media-amazon.com/images/I/71D0gXjWzgL._SL1500_.jpg", alt: "" },
+                            { url: "https://m.media-amazon.com/images/I/61eBqPdhCxL._SL1200_.jpg", alt: "" }
+                        ],
+                        affiliateLinks: [ {
+                            name: "Amazon.in",
+                            logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+                            url: "https://amzn.to/3Cw93VO",
+                            price: "₹799",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.0,
+                                totalReviews: 4642
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "3-9 days",
+                                isFree: true
+                            }
+                        },
+                        {
+                            name: "Flipkart",
+                            logo: "https://seeklogo.com/images/F/flipkart-logo-F2525E4DDE-seeklogo.com.png",
+                            url: "https://fktr.in/8rv691q",
+                            price: "₹449",
+                            coupon: {
+                                code: "",
+                                discount: ""
+                            },
+                            rating: {
+                                score: 4.1,
+                                totalReviews: 992
+                            },
+                            delivery: {
+                                type: "Standard",
+                                estimatedDays: "3-5 days",
+                                isFree: true
+                            }
+                        },
+                        ]
+                    }
+                ]
+            }
+                                                     
+        
+        ];
+        let selectedCategory = null;
+        function filterByCategory(category) {
+        selectedCategory = category === "All Categories" ? null : category; 
+        document.getElementById("selectedCategory").textContent = 
+            ` ${selectedCategory || "All Categories"}`;
+        applyFilters(); 
+        }
+        function initializeCategoryFilter() {
+            const categories = ['All Categories', ...new Set(productsData.map(product => product.category))];
+            const categoryList = document.getElementById('categoryList');
+            
+            categoryList.innerHTML = categories.map(category => `
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer" 
+                     onclick="selectCategory('${category}')">
+                    ${category}
+                </div>
+            `).join('');
+        }
+        function toggleCategoryDropdown() {
+            const dropdown = document.getElementById('categoryList');
+            dropdown.classList.toggle('hidden');
+        }
+
+        function selectCategory(category) {
+            selectedCategory = category;
+            document.getElementById('selectedCategory').textContent = category;
+
+            const dropdown = document.getElementById('categoryList');
+            dropdown.classList.add('hidden');
+            
+            filterByCategory(selectedCategory);
+        }
+
+        function handleSearchInput() {
+            applyFilters();
+        }
+
+        function 
+        
+        applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+
+            const filteredProducts = productsData.filter(product => {
+                const matchesCategory = !selectedCategory || product.category === selectedCategory || selectedCategory === "All Categories";
+                const matchesSearch =
+                    product.name.toLowerCase().includes(query) ||
+                    product.variants.some(variant => variant.code.toLowerCase().includes(query)); 
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filteredProducts.length === 0) {
+                appContainer.innerHTML = `
+                    <div class="flex flex-col items-center justify-center p-8">
+                        <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">No products found</h3>
+                        <p class="text-gray-500">Try adjusting your search or filter criteria</p>
+                    </div>
+                `;
+            } else {
+                renderApp(filteredProducts);
+            }
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeCategoryFilter();
+            renderApp();
+        });
+
+
+        const appContainer = document.getElementById('app');
+        let selectedVariants = productsData.reduce(
+            (acc, product) => ({
+                ...acc,
+                [product.id]: { variant: product.variants[0], currentIndex: 0 }
+            }),
+            {}
+        );
+
+        function handleVariantSelect(productId, variantId) {
+            const product = productsData.find(p => p.id === productId);
+            const variant = product.variants.find(v => v.id === variantId);
+
+            if (product && variant) {
+                selectedVariants[productId] = { variant, currentIndex: 0 };
+                renderApp();
+            }
+        }
+        // <div class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+        //                                     <span class="font-medium">Product Codes:</span> 
+        //                                     <div class="flex flex-wrap gap-2 mt-1">
+        //                                         ${product.variants.map(v => `
+        //                                             <span class="px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-700 text-xs">
+        //                                                 ${v.code}
+        //                                             </span>
+        //                                         `).join('')}
+        //                                     </div>
+        //                                 </div>
+        // <span class="px-3 py-1 rounded-full text-xs font-medium bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 whitespace-nowrap">
+        //                                         ${product.category}
+        //                                     </span>
+        // <div class="flex flex-col sm:flex-col justify-between items-center sm:items-center gap-2 mb-1">
+        //                                     <h2 class="text-lg sm:text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent break-words font-dancing">
+        //                                         ${product.name}
+        //                                     </h2>
+        //                                 </div>
+        function renderApp(filteredProducts = productsData) {
+            appContainer.innerHTML = `
+                <div class="min-h-full w-full bg-gradient-to-br from-pink-50 to-purple-50 dark:from-gray-900 dark:to-purple-900">
+                    <div class="mx-auto max-w-7xl px-2 py-4 sm:px-3 lg:px-4">
+                        <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                            ${filteredProducts.map(product => `
+                                <div class="transform transition-all duration-300  min-w-[320px]">
+                                    <div class="rounded-2xl  dark:bg-gray-800  overflow-hidden p-2.5">
+                                        
+                                        <div class="space-y-1.5">
+                                            <div id="gallery-${product.id}" class="relative">
+                                                ${createImageGalleryHTML(product.id)}
+                                            </div>
+                                            
+                                            <div class="flex gap-2 overflow-x-auto p-1 scrollbar-hide">
+                                                ${product.variants.map(variant => `
+                                                    <button 
+                                                        onclick="handleVariantSelect(${product.id}, ${variant.id})" 
+                                                        class="flex-none transition-all duration-200 ${
+                                                            selectedVariants[product.id].variant.id === variant.id 
+                                                            ? "ring-2 ring-pink-500 scale-105 rounded-lg" 
+                                                            : "hover:ring-2 hover:ring-purple-300"
+                                                        }"
+                                                    >
+                                                        <img 
+                                                            src="${variant.images[0].url}" 
+                                                            alt="${variant.name}" 
+                                                            class="h-16 w-16 rounded-lg object-cover object-center" 
+                                                        />
+                                                    </button>
+                                                `).join('')}
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            ${createAffiliateLinkHTML(product.id)}
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function formatReviewCount(count) {
+            if (count >= 1000000) {
+                return `${(count / 1000000).toFixed(1)}M`;
+            }
+            if (count >= 1000) {
+                return `${(count / 1000).toFixed(1)}k`;
+            }
+            return count;
+        }
+
+        function renderStars(rating) {
+            return Array.from({ length: 5 }, (_, index) => {
+                const fullStars = Math.floor(rating);
+                const partialFill = rating - fullStars;
+                const currentStarFill = index === fullStars ? partialFill * 100 : 0;
+                const isFullStar = index < fullStars;
+                const isPartialStar = index === fullStars && partialFill > 0;
+                
+                return `
+                    <svg class="h-4 w-4 ${isFullStar || isPartialStar ? "text-yellow-400" : "text-gray-300"}" 
+                         viewBox="0 0 24 24" 
+                         fill="${isFullStar ? "currentColor" : "none"}"
+                         stroke="currentColor">
+                        ${isPartialStar ? `
+                            <defs>
+                                <linearGradient id="partial-${index}">
+                                    <stop offset="${currentStarFill}%" stop-color="currentColor" />
+                                    <stop offset="${currentStarFill}%" stop-color="transparent" />
+                                </linearGradient>
+                            </defs>
+                        ` : ''}
+                        <path stroke-linecap="round" 
+                              stroke-linejoin="round" 
+                              stroke-width="2"
+                              fill="${isPartialStar ? `url(#partial-${index})` : ''}"
+                              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                `;
+            }).join('');
+        }
+
+        function createAffiliateLinkHTML(productId) {
+            const product = productsData.find(p => p.id === productId);
+            const affiliateLinks = product.variants.find(v => v.id === selectedVariants[productId].variant.id).affiliateLinks;
+
+            // Group links by name
+            const groupedLinks = affiliateLinks.reduce((acc, link) => {
+                if (!acc[link.name]) {
+                    acc[link.name] = [];
+                }
+                acc[link.name].push(link);
+                return acc;
+            }, {});
+
+            return `
+                <h3 class="mb-2 font-semibold text-lg text-amber-600 dark:text-amber-300 font-dancing">Available From</h3>
+                <div class="space-y-1">
+                    ${Object.entries(groupedLinks).map(([name, links]) => {
+                        if (links.length <= 1) {
+                            // Single link display
+                            return createLinkElement(links[0]);
+                        } else {
+                            // Create alternative link with show/hide functionality
+                            const groupId = `group-${productId}-${name.replace(/\s+/g, '')}`;
+                            return `
+                                <div>
+                                    <button onclick="toggleGroupLinks('${groupId}')"
+                                            class="w-full flex flex-col rounded-lg border border-amber-200 dark:border-indigo-700 
+                                                   p-0.5 hover:bg-amber-50 dark:hover:bg-indigo-900 transition-colors duration-200">
+                                        <div class="flex items-center justify-between px-1">
+                                            <div class="flex items-center gap-3">
+                                                <div class="p-1 bg-white dark:bg-gray-800 rounded-full">
+                                                    <img src="${links[0].logo}" alt="${name}" class="h-8 w-8 object-contain" />
+                                                </div>
+                                                <span class="font-medium text-amber-900 dark:text-indigo-200">${name}</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 pl-1">
+                                                <span class="text-sm text-amber-700 dark:text-indigo-300">${links.length} options</span>
+                                                <svg class="w-5 h-5 transition-transform duration-200" 
+                                                     id="arrow-${groupId}"
+                                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <div id="${groupId}" class="hidden space-y-1 mt-1 ">
+                                        ${links.map(link => createLinkElement(link)).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        function createLinkElement(link) {
+            return `
+                <a href="${link.url}" target="_blank" rel="noopener noreferrer" 
+                   class="flex flex-col w-full rounded-lg border border-amber-200 dark:border-indigo-700 
+                          p-0.5 hover:bg-amber-50 dark:hover:bg-indigo-900  
+                          transition-colors duration-200">
+                    <div class="flex items-center justify-between px-1">
+                        <div class="flex items-center gap-3">
+                            <div class="p-1 bg-white dark:bg-gray-800 rounded-full">
+                                <img src="${link.logo}" alt="${link.name}" class="h-8 w-8 object-contain" />
+                            </div>
+                            <span class="font-medium text-amber-900 dark:text-indigo-200">${link.name}</span>
+                        </div>
+                        <span class="pr-1 font-semibold text-amber-700 dark:text-indigo-300">${link.price}</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm px-1">
+                        <div class="flex items-center gap-1">
+                            <div class="flex items-center">
+                                ${renderStars(link.rating.score)}
+                                <span class="pr-1 pl-1 font-semibold text-amber-700 dark:text-indigo-300">${link.rating.score}</span>
+                            </div>
+                            <span class="text-amber-700 dark:text-indigo-300">
+                                (${formatReviewCount(link.rating.totalReviews)} reviews)
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-3 text-amber-600 dark:text-indigo-300">
+                            <div class="flex items-center gap-1">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                                <span class="text-amber-700 dark:text-indigo-300">${link.delivery.estimatedDays}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            `;
+        }
+
+        // Add this function to handle toggling grouped links
+        function toggleGroupLinks(groupId) {
+            const groupElement = document.getElementById(groupId);
+            const arrowElement = document.getElementById(`arrow-${groupId}`);
+            
+            // Toggle visibility
+            groupElement.classList.toggle('hidden');
+            
+            // Rotate arrow
+            if (groupElement.classList.contains('hidden')) {
+                arrowElement.style.transform = 'rotate(0deg)';
+            } else {
+                arrowElement.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Add click outside listener to close dropdowns
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('[id^="dropdown-"]') && !e.target.closest('button')) {
+                document.querySelectorAll('[id^="dropdown-"]').forEach(dropdown => {
+                    dropdown.classList.add('hidden');
+                    const arrow = document.getElementById(dropdown.id.replace('dropdown-', 'arrow-'));
+                    if (arrow) arrow.classList.remove('rotate-180');
+                });
+            }
+        });
+
+        function createImageGalleryHTML(productId) {
+            const { variant, currentIndex } = selectedVariants[productId];
+            const images = variant.images;
+            const name=variant.name;
+            const indicatorsHTML = images.map((_, index) => `
+                <button 
+                    class="w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                        currentIndex === index 
+                        ? "bg-pink-500 w-4" 
+                        : "bg-gray-300 hover:bg-pink-300 hover:rounded-full"
+                    }"
+                    aria-label="Go to image ${index + 1}" 
+                    onclick="updateGallery(${productId}, ${index})"
+                ></button>
+            `).join('');
+
+            return `
+            <div class="flex flex-col sm:flex-col justify-between items-center sm:items-center gap-2 mb-1">
+                        <h2 class="text-lg sm:text-2xl break-words ">
+                            ${name}
+                        </h2>
+                    </div>
+                <div class="relative w-full rounded-xl overflow-hidden" style="aspect-ratio:1/1">
+                    <img 
+                        src="${images[currentIndex].url}" 
+                        alt="${images[currentIndex].alt}" 
+                        class="h-full w-full object-contain object-center transition-opacity duration-300"
+                    />
+                    
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2 bg-black bg-opacity-20 rounded-full px-3 py-1.5">
+                        ${indicatorsHTML}
+                    </div>
+                    
+
+                    <button 
+                        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                        aria-label="Previous"
+                        onclick="prevImage(${productId})"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    
+                    <button 
+                        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                        aria-label="Next"
+                        onclick="nextImage(${productId})"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    
+                </div>
+                
+            `;
+        }
+
+        function updateGallery(productId, index) {
+            selectedVariants[productId].currentIndex = index;
+            document.getElementById(`gallery-${productId}`).innerHTML = createImageGalleryHTML(productId);
+        }
+
+        function prevImage(productId) {
+            const variantData = selectedVariants[productId];
+            variantData.currentIndex = (variantData.currentIndex - 1 + variantData.variant.images.length) % variantData.variant.images.length;
+            updateGallery(productId, variantData.currentIndex);
+        }
+
+        function nextImage(productId) {
+            const variantData = selectedVariants[productId];
+            variantData.currentIndex = (variantData.currentIndex + 1) % variantData.variant.images.length;
+            updateGallery(productId, variantData.currentIndex);
+        }
+
+        renderApp();
+
+        function addToWishlist(productId) {
+            const wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+            if (!wishlist.includes(productId)) {
+                wishlist.push(productId);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                updateWishlistUI();
+            }
+        }
+    </script>
+
+    <footer class="bg-gradient-to-r from-pink-50 to-purple-50 dark:from-gray-900 dark:to-purple-900 pt-8 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                        <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1z"/>
+                        </svg>
+                        Shop By Category
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                        <li><a href="#" onclick="filterByCategory('Moon')" class="hover:text-pink-500 transition-colors">Moon Lamps</a></li>
+                        <li><a href="#" onclick="filterByCategory('TableLamps')" class="hover:text-pink-500 transition-colors"></a></li>
+                        <li><a href="#" onclick="filterByCategory('WallLights')" class="hover:text-pink-500 transition-colors"></a></li>
+                        <li><a href="#" onclick="filterByCategory('SmartLights')" class="hover:text-pink-500 transition-colors"></a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                        <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                        Bright Updates
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">Subscribe for latest lighting trends and exclusive offers!</p>
+                    <form onsubmit="handleSubscribe(event)" class="space-y-4">
+                        <div class="flex-1 gap-2">
+                            <input type="email" 
+                                   id="subscribeEmail" 
+                                   placeholder="Enter your email" 
+                                   class="flex-1 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-pink-500">
+                            <button type="submit" class="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                        <p id="loveMessage" class="text-pink-600 dark:text-pink-400 italic hidden animate-fadeIn"></p>
+                    </form>
+                </div>
+
+                <div id="policyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+                    <div class="bg-white dark:bg-gray-800 max-w-2xl w-full m-4 rounded-xl shadow-2xl transform transition-all">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 id="policyTitle" class="text-2xl font-bold text-gray-900 dark:text-white"></h3>
+                                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div id="policyContent" class="prose dark:prose-invert max-w-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                        <svg class="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                        </svg>
+                        Connect With Us
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-pink-500 dark:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" class="text-gray-600 hover:text-pink-500 dark:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-pink-500 dark:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.862.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="text-gray-600 hover:text-pink-500 dark:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="text-gray-600 hover:text-pink-500 dark:text-gray-300 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <span class="animate-pulse">💡</span>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Illuminating homes with style since 2025
+                        </p>
+                    </div>
+                    <div class="flex gap-6 text-sm text-gray-600 dark:text-gray-300">
+                        <a href="#" onclick="showPolicy('privacy')" class="hover:text-pink-500 transition-colors">Privacy Policy</a>
+                        <a href="#" onclick="showPolicy('terms')" class="hover:text-pink-500 transition-colors">Terms of Service</a>
+                        <a href="#" onclick="showPolicy('contact')" class="hover:text-pink-500 transition-colors">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const loveMessages = [
+        "✨ Thanks for joining our bright community! 💡",
+        "🌟 Get ready for brilliant lighting ideas!",
+        "💡 Welcome to your new lighting journey!",
+        "✨ Illuminating your inbox with style!",
+        "🎉 Thanks for brightening our day!",
+        "💫 Get ready for radiant deals and updates!",
+        "🌟 You're now part of our luminous family!",
+        "💡 Lighting inspiration coming your way!",
+        "✨ Thank you for choosing us to light up your space!",
+        "🎆 Get ready for a brighter home experience!"
+    ];
+
+    function handleSubscribe(event) {
+        event.preventDefault();
+        const email = document.getElementById('subscribeEmail').value;
+        if (email) {
+            const randomMessage = loveMessages[Math.floor(Math.random() * loveMessages.length)];
+            const messageElement = document.getElementById('loveMessage');
+            messageElement.textContent = randomMessage;
+            messageElement.classList.remove('hidden');
+            document.getElementById('subscribeEmail').value = '';
+            
+            setTimeout(() => {
+                messageElement.classList.add('hidden');
+            }, 5000);
+        }
+    }
+
+    function filterByCategory(category) {
+        document.getElementById('selectedCategory').textContent = category;
+        
+        selectedCategory = category;
+        applyFilters();
+
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const policyContents = {
+        privacy: {
+            title: "Privacy Policy 💡",
+            content: `
+                <div class="space-y-4">
+                    <div class="p-4 bg-pink-50 dark:bg-pink-900 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Your Privacy Matters ✨</h4>
+                        <p>We protect your information with the same care we put into designing our lighting solutions.</p>
+                    </div>
+                    
+                    <div class="p-4 border border-pink-200 dark:border-pink-700 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Information We Collect 📝</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Contact information</li>
+                            <li>Shopping preferences</li>
+                            <li>Lighting style preferences</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-4 bg-pink-50 dark:bg-pink-900 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Data Protection 🔒</h4>
+                        <p>Your data is secured with advanced encryption and security measures.</p>
+                    </div>
+                </div>
+            `
+        },
+        terms: {
+            title: "Terms of Service 📜",
+            content: `
+                <div class="space-y-4">
+                    <div class="p-4 bg-pink-50 dark:bg-pink-900 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Service Agreement ✨</h4>
+                        <p>Welcome to our lighting community! Let's brighten spaces together.</p>
+                    </div>
+                    
+                    <div class="p-4 border border-pink-200 dark:border-pink-700 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Guidelines 💡</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Product quality guarantee</li>
+                            <li>Shipping and returns policy</li>
+                            <li>Customer satisfaction commitment</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        contact: {
+            title: "Contact Our Team 📞",
+            content: `
+                <div class="space-y-4">
+                    <div class="p-4 bg-pink-50 dark:bg-pink-900 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Get in Touch ✨</h4>
+                        <p>We're here to help illuminate your space!</p>
+                    </div>
+                    
+                    <div class="p-4 border border-pink-200 dark:border-pink-700 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Reach Us 💡</h4>
+                        <ul class="list-none space-y-3">
+                            <li class="flex items-center gap-2">
+                                <span class="text-pink-500">📧</span> support@lampsforyours.com
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-pink-500">📱</span> +1 (555) BRIGHT-HOME
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-pink-500">🏢</span> 456 Lighting Avenue, Bright City, BC 12345
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        }
+    };
+
+    function showPolicy(type) {
+        const modal = document.getElementById('policyModal');
+        const title = document.getElementById('policyTitle');
+        const content = document.getElementById('policyContent');
+        
+        title.innerHTML = policyContents[type].title;
+        content.innerHTML = policyContents[type].content;
+        
+        modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('policyModal').classList.add('hidden');
+    }
+
+    document.getElementById('policyModal').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('policyModal')) {
+            closeModal();
+        }
+    });
+
+    const banners = [
+        {
+            text: "💡 Illuminate Your Space with Style! ✨",
+            bgColor: "bg-pink-50",
+            textColor: "text-pink-700",
+            animation: "animate-slide animate-fade"
+        },
+        {
+            text: "⭐ Free Shipping on Premium Lighting! 🚚",
+            bgColor: "bg-blue-50",
+            textColor: "text-blue-700",
+            animation: "animate-bounce-horizontal animate-wave"
+        },
+        {
+            text: "🌟 New Collection of Smart Lights Available! 💫",
+            bgColor: "bg-purple-50",
+            textColor: "text-purple-700",
+            animation: "animate-scale animate-fade"
+        },
+        {
+            text: "✨ Transform Your Home with Perfect Lighting 🏠",
+            bgColor: "bg-red-50",
+            textColor: "text-red-700",
+            animation: "animate-slide animate-wave"
+        },
+        {
+            text: "🎁 Special Offers on Chandeliers! 💫",
+            bgColor: "bg-green-50",
+            textColor: "text-green-700",
+            animation: "animate-bounce-horizontal animate-scale"
+        }
+    ];
+
+    let currentBannerIndex = 0;
+
+    function updateBanner() {
+        const bannerContainer = document.getElementById('banner-container');
+        const bannerContent = document.getElementById('banner-content');
+        const currentBanner = banners[currentBannerIndex];
+
+        bannerContainer.className = `w-full overflow-hidden ${currentBanner.bgColor} border-b border-opacity-20 transition-all duration-500`;
+        bannerContent.className = `flex items-center gap-2 ${currentBanner.textColor} ${currentBanner.animation}`;
+        bannerContent.innerHTML = currentBanner.text;
+
+        currentBannerIndex = (currentBannerIndex + 1) % banners.length;
+    }
+    updateBanner();
+
+    setInterval(updateBanner, 5000);
+    </script>
+</body>
+</html>
