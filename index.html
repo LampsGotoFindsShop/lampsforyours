@@ -800,10 +800,38 @@
             const dropdown = document.getElementById('categoryList');
             dropdown.classList.add('hidden');
             
-            filterByCategory(selectedCategory);
+            // Clear search input and hash when category changes
+            const searchInput = document.getElementById('searchInput');
+            searchInput.value = ''; // Clear search input
+            window.location.hash = ''; // Clear URL hash
+            
+            applyFilters();
         }
 
         function handleSearchInput() {
+            const query = document.getElementById('searchInput').value.toUpperCase();
+            
+            // If search is empty, reset everything
+            if (!query) {
+                window.location.hash = ''; // Clear URL hash
+                document.getElementById('selectedCategory').textContent = 'All Categories';
+                selectedCategory = null;
+            } else {
+                // Check if the search matches a product code exactly
+                const matchingProduct = productsData.find(product => 
+                    product.variants.some(variant => variant.code === query)
+                );
+
+                if (matchingProduct) {
+                    window.location.hash = query;
+                    
+                    // Update category
+                    const category = matchingProduct.category;
+                    document.getElementById('selectedCategory').textContent = category;
+                    selectedCategory = category;
+                }
+            }
+
             applyFilters();
         }
 
@@ -813,10 +841,14 @@
             const query = document.getElementById('searchInput').value.toLowerCase();
 
             const filteredProducts = productsData.filter(product => {
-                const matchesCategory = !selectedCategory || product.category === selectedCategory || selectedCategory === "All Categories";
-                const matchesSearch =
+                const matchesCategory = !selectedCategory || 
+                    product.category === selectedCategory || 
+                    selectedCategory === "All Categories";
+                    
+                const matchesSearch = !query || 
                     product.name.toLowerCase().includes(query) ||
-                    product.variants.some(variant => variant.code.toLowerCase().includes(query)); 
+                    product.variants.some(variant => variant.code.toLowerCase().includes(query));
+                    
                 return matchesCategory && matchesSearch;
             });
 
@@ -1173,6 +1205,45 @@
                 updateWishlistUI();
             }
         }
+
+        // Modify handleRouting function
+        function handleRouting() {
+            const productCode = window.location.hash.substring(1).toUpperCase();
+            const searchInput = document.getElementById('searchInput');
+            
+            if (productCode) {
+                // Find product with matching code
+                const matchingProduct = productsData.find(product => 
+                    product.variants.some(variant => variant.code === productCode)
+                );
+
+                if (matchingProduct) {
+                    // Set search input and category if product is found
+                    searchInput.value = productCode;
+                    const category = matchingProduct.category;
+                    document.getElementById('selectedCategory').textContent = category;
+                    selectedCategory = category;
+                } else {
+                    // If no matching product, clear everything
+                    searchInput.value = '';
+                    document.getElementById('selectedCategory').textContent = 'All Categories';
+                    selectedCategory = null;
+                }
+            } else {
+                // No hash, maintain category but clear search
+                searchInput.value = '';
+            }
+            
+            applyFilters();
+        }
+
+        // Keep existing event listeners
+        window.addEventListener('hashchange', handleRouting);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeCategoryFilter();
+            handleRouting();
+        });
     </script>
 
     <footer class="bg-gradient-to-r from-pink-50 to-purple-50 dark:from-gray-900 dark:to-purple-900 pt-8 pb-6">
@@ -1319,12 +1390,16 @@
     }
 
     function filterByCategory(category) {
-        document.getElementById('selectedCategory').textContent = category;
+        selectedCategory = category === "All Categories" ? null : category;
+        document.getElementById("selectedCategory").textContent = 
+            `${selectedCategory || "All Categories"}`;
         
-        selectedCategory = category;
+        // Clear search input and hash when filtering by category
+        const searchInput = document.getElementById('searchInput');
+        searchInput.value = ''; // Clear search input
+        window.location.hash = ''; // Clear URL hash
+        
         applyFilters();
-
-        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
     }
 
     const policyContents = {
